@@ -1,0 +1,169 @@
+/*  Prog Ppal */
+
+.prog-ppal {
+    background-color: #f7f9fb;
+
+}
+
+
+.bienvenida {
+    text-align: center;
+    font-family: $fuente;
+    padding-top: 20px;
+    text-decoration: underline;
+    font-size: 35px;
+    color: #041a04;
+
+}
+
+h3 {
+    @extend .bienvenida;
+    padding-top: 0;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+/*  Primer section */
+.introduccion {
+    margin-left: 250px;
+    margin-right: 250px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+
+    p {
+        text-align: center;
+        line-height: 2;
+        font-size: 16px;
+    }
+}
+
+/*  Segunda section */
+.flex-prog-ppal {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    div {
+        margin-left: 40px;
+        margin-right: 40px;
+        animation-name: aparecer-elemento;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+
+        img {
+            min-width: 250px;
+            padding-bottom: 20px;
+            border-radius: 40px;
+            // filter: drop-shadow(2px 2px 4px #000000c5);
+        }
+
+        p {
+            text-align: center;
+            font-size: 15px;
+        }
+    }
+}
+
+/*  Tercer section */
+
+.beneficios {
+    background-color: #ffffffc5;
+
+}
+
+.beneficios-prog-ppal {
+    text-align: center;
+    @extend .bienvenida;
+    text-decoration: none;
+}
+
+.lista-beneficios {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    li {
+        position: relative;
+        padding: 16px;
+
+        p {
+            padding-left: 20px;
+        }
+
+        .rombo {
+            width: 10px;
+            height: 10px;
+            background: #163504;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 24px;
+
+        }
+    }
+
+
+
+}
+
+@media screen and (max-width:1440px) {
+    .introduccion {
+        margin-left: 2px;
+        margin-right: 2px;
+
+        p {
+            text-align: center;
+            line-height: 2;
+        }
+    }
+
+}
+
+@media screen and (max-width:1020px) {
+    .introduccion {
+        margin-left: 2px;
+        margin-right: 2px;
+
+        p {
+            text-align: center;
+            line-height: 2;
+
+        }
+    }
+
+    .flex-prog-ppal {
+        flex-direction: column;
+
+        div {
+            padding-bottom: 20px;
+        }
+    }
+
+
+
+}
+
+@media screen and (max-width: 760px) {
+    .lista-beneficios {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .prog-ppal {
+        h1 {
+            font-size: 30px;
+
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+    }
+
+
+}

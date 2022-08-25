@@ -1,0 +1,9 @@
+@keyframes aparecer-elemento {
+    0%{
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

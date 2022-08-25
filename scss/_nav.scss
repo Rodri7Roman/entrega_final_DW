@@ -1,0 +1,31 @@
+/*  NAVEGADOR */
+
+.navbar{
+    background-color: #c8dad4c5;
+    position: sticky;
+    top: .1px;
+    z-index: +1;
+}
+
+.navbar-collapse{
+    flex-grow: inherit !important;
+}
+
+
+.nav-item{
+    margin: $margin-items;
+    padding: $padding-items;
+    a{
+        font-family: $fuente;
+    }
+}
+
+.nav-item:hover{
+    background-color: #05412f21;
+    border-radius: 8px;
+
+    transform: scale(.9,.9);
+    transition-duration: .3s;
+    animation-timing-function: ease;
+    
+}

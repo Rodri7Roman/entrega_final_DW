@@ -1,0 +1,43 @@
+/*  FOOTER */
+.footer{
+    
+    background-color: #2d5332;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    p{
+        font-family: $fuente;
+        font-weight: bold;
+        font-size: 24px;
+        color: #051808;
+        margin-bottom: 5px !important;
+
+    }
+    a{
+        font-family: $fuente;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+}
+
+
+$redes:(
+    whatsapp:#051808,
+    facebook: #0000ff,
+    gmail: #521c1c,
+);
+
+@each $red, $color in $redes{
+    .red-#{$red}{
+        color: $color;
+        display: flex;
+        padding-top: 12px;
+        img{
+            padding-right: 2px;
+            margin-right: 5px;
+        }
+    }
+}
