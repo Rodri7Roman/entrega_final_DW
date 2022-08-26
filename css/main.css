@@ -62,14 +62,14 @@ table {
     font-family: 'Montserrat', sans-serif;
     position: absolute;
     top: 25%;
-    left: 10%;
+    left: 6%;
     color: #ffffff;
     font-size: 38px;
     font-weight: bold; }
   .navbar .segundo-texto {
     position: absolute;
     top: 38%;
-    left: 10%;
+    left: 6%;
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
@@ -289,7 +289,9 @@ h3 {
     flex-direction: column;
     align-items: center; }
     .flex-ppal-servicios p {
-      width: 100vw; } }
+      width: 100vw; }
+  .container-fluid {
+    justify-content: space-between !important; } }
 
 @media screen and (max-width: 760px) {
   .lista-beneficios {
