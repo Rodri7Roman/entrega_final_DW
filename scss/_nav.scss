@@ -1,22 +1,103 @@
 /*  NAVEGADOR */
 
 .navbar{
-    background-color: #c8dad4c5;
-    position: sticky;
+    background-image: url(../img/Group.png) ;
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: flex-start !important;
+    padding: 0 !important;
+    position: relative;
+    
+    .primer-texto{
+        font-family: 'Montserrat', sans-serif;
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        color: #ffffff;
+        font-size: 38px;
+        font-weight: bold;
+    }
+    .segundo-texto{
+        position: absolute;
+        top: 38%;
+        left: 10%;
+        color: #ffffff;        
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        font-size: 24px;
+    }
+    .redes-nav{
+        position: absolute;
+        font-family: 'Montserrat', sans-serif;
+        top: 90%;
+        left: 55%;
+        display: flex;
+        color: #ffffff;
+        font-weight: 100;
+        font-size: 18px;
+        div{
+            padding-right: 40px;         
+            display: flex;
+            padding-top: 8px;
+            a{
+
+                padding-left: 8px;
+            }
+        }
+    }
+    @media screen and (max-width:1280px){
+        .redes-nav{
+            left: 5%;
+        }
+    }
+    @media screen and (max-width:780px) {
+        .redes-nav{
+            flex-direction: column;
+            top: 85%;
+            font-size: 14px;
+        }
+
+        .primer-texto{
+            font-size: 30px;
+        }
+        .segundo-texto{
+            font-size: 20px;
+        }
+    }
+}
+
+
+
+
+
+
+.container-fluid{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #070e0c41;
+    justify-content: space-around !important;
+    position: fixed;
     top: .1px;
-    z-index: +1;
+    z-index: 1;
 }
 
 .navbar-collapse{
     flex-grow: inherit !important;
+    
 }
 
 
 .nav-item{
     margin: $margin-items;
     padding: $padding-items;
+    
+    
     a{
         font-family: $fuente;
+        color: #ffffff !important;
+        font-size: 16px;
     }
 }
 

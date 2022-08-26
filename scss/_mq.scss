@@ -1,0 +1,80 @@
+/*  MQ */
+@media screen and (max-width:1440px) {
+    .introduccion {
+        margin-left: 2px;
+        margin-right: 2px;
+
+        p {
+            text-align: center;
+            line-height: 2;
+        }
+    }
+}
+
+@media screen and (max-width:1020px) {
+
+    .flex-prog-ppal {
+        flex-direction: column;
+
+        div {
+            padding-bottom: 20px;
+        }
+    }
+
+    .flex-ppal-servicios{
+        flex-direction: column;
+        align-items: center;
+        p{
+            width: 100vw;
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 760px) {
+    .lista-beneficios {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    .introduccion {
+        p {
+            font-size: 13px;
+        }
+    }
+
+    .lista-beneficios {
+        li {
+            p {
+                padding-left: 20px;
+                font-size: 13px;
+            }
+        }
+    }
+
+    .flex-prog-ppal {
+        div {
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:375px) {
+    .prog-ppal {
+        h1 {
+            font-size: 30px;
+
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+    }
+
+}

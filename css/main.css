@@ -1,3 +1,46 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 @keyframes aparecer-elemento {
   0% {
     transform: translateY(-200px);
@@ -7,10 +50,66 @@
 
 /*  NAVEGADOR */
 .navbar {
-  background-color: #c8dad4c5;
-  position: sticky;
+  background-image: url(../img/Group.png);
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: flex-start !important;
+  padding: 0 !important;
+  position: relative; }
+  .navbar .primer-texto {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    color: #ffffff;
+    font-size: 38px;
+    font-weight: bold; }
+  .navbar .segundo-texto {
+    position: absolute;
+    top: 38%;
+    left: 10%;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 24px; }
+  .navbar .redes-nav {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    top: 90%;
+    left: 55%;
+    display: flex;
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 18px; }
+    .navbar .redes-nav div {
+      padding-right: 40px;
+      display: flex;
+      padding-top: 8px; }
+      .navbar .redes-nav div a {
+        padding-left: 8px; }
+  @media screen and (max-width: 1280px) {
+    .navbar .redes-nav {
+      left: 5%; } }
+  @media screen and (max-width: 780px) {
+    .navbar .redes-nav {
+      flex-direction: column;
+      top: 85%;
+      font-size: 14px; }
+    .navbar .primer-texto {
+      font-size: 30px; }
+    .navbar .segundo-texto {
+      font-size: 20px; } }
+
+.container-fluid {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #070e0c41;
+  justify-content: space-around !important;
+  position: fixed;
   top: .1px;
-  z-index: +1; }
+  z-index: 1; }
 
 .navbar-collapse {
   flex-grow: inherit !important; }
@@ -19,7 +118,9 @@
   margin: 2px;
   padding: 4px; }
   .nav-item a {
-    font-family: Arial, Helvetica, sans-serif; }
+    font-family: "Poppins", sans-serif;
+    color: #ffffff !important;
+    font-size: 16px; }
 
 .nav-item:hover {
   background-color: #05412f21;
@@ -34,7 +135,7 @@
 
 .bienvenida, h3, .beneficios-prog-ppal {
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   padding-top: 20px;
   font-size: 35px;
   color: #041a04; }
@@ -127,6 +228,49 @@ h3 {
       position: absolute;
       top: 24px; }
 
+/*  FOOTER */
+.footer {
+  background-color: #2d5332;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+  .footer p {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #051808;
+    margin-bottom: 5px !important; }
+  .footer a {
+    font-family: "Poppins", sans-serif; }
+  .footer a:hover {
+    text-decoration: underline; }
+
+.red-whatsapp {
+  color: #051808;
+  display: flex;
+  padding-top: 12px; }
+  .red-whatsapp img {
+    padding-right: 2px;
+    margin-right: 5px; }
+
+.red-facebook {
+  color: #0000ff;
+  display: flex;
+  padding-top: 12px; }
+  .red-facebook img {
+    padding-right: 2px;
+    margin-right: 5px; }
+
+.red-gmail {
+  color: #521c1c;
+  display: flex;
+  padding-top: 12px; }
+  .red-gmail img {
+    padding-right: 2px;
+    margin-right: 5px; }
+
 /*  MQ */
 @media screen and (max-width: 1440px) {
   .introduccion {
@@ -165,46 +309,3 @@ h3 {
     font-size: 30px; }
   .prog-ppal h3 {
     font-size: 20px; } }
-
-/*  FOOTER */
-.footer {
-  background-color: #2d5332;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly; }
-  .footer p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 24px;
-    color: #051808;
-    margin-bottom: 5px !important; }
-  .footer a {
-    font-family: Arial, Helvetica, sans-serif; }
-  .footer a:hover {
-    text-decoration: underline; }
-
-.red-whatsapp {
-  color: #051808;
-  display: flex;
-  padding-top: 12px; }
-  .red-whatsapp img {
-    padding-right: 2px;
-    margin-right: 5px; }
-
-.red-facebook {
-  color: #0000ff;
-  display: flex;
-  padding-top: 12px; }
-  .red-facebook img {
-    padding-right: 2px;
-    margin-right: 5px; }
-
-.red-gmail {
-  color: #521c1c;
-  display: flex;
-  padding-top: 12px; }
-  .red-gmail img {
-    padding-right: 2px;
-    margin-right: 5px; }
