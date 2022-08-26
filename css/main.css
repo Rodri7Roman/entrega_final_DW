@@ -36,17 +36,15 @@
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   padding-top: 20px;
-  text-decoration: underline;
   font-size: 35px;
   color: #041a04; }
 
 h3 {
   padding-top: 0;
   padding-bottom: 10px;
-  text-decoration: none;
   font-size: 25px; }
 
-/*  Primer section */
+/*  INTRODUCCION */
 .introduccion {
   margin-left: 250px;
   margin-right: 250px;
@@ -58,11 +56,14 @@ h3 {
     line-height: 2;
     font-size: 16px; }
 
-/*  Segunda section */
+.text-center {
+  text-align: start !important; }
+
+/*  PROGRAMA PRINCIPAL */
 .flex-prog-ppal {
   display: flex;
-  padding-top: 30px;
-  padding-bottom: 20px; }
+  padding-top: 40px;
+  padding-bottom: 40px; }
   .flex-prog-ppal div {
     margin-left: 40px;
     margin-right: 40px;
@@ -72,18 +73,41 @@ h3 {
     .flex-prog-ppal div img {
       min-width: 250px;
       padding-bottom: 20px;
-      border-radius: 40px; }
+      border-radius: 40px;
+      filter: drop-shadow(4px -4px 40px #000000c5); }
     .flex-prog-ppal div p {
       text-align: center;
       font-size: 15px; }
 
-/*  Tercer section */
+.flex-ppal-servicios {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  align-items: center; }
+  .flex-ppal-servicios div {
+    margin-left: 40px;
+    margin-right: 40px; }
+  .flex-ppal-servicios h2 {
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-left: 40px; }
+  .flex-ppal-servicios p {
+    width: 50vw;
+    padding-top: 2px;
+    font-size: 15px;
+    padding-right: 40px;
+    padding-left: 40px; }
+
+.bg-gray {
+  background-color: #f3f3f3; }
+
+/*  BENEFICIOS-INICIO */
 .beneficios {
-  background-color: #ffffffc5; }
+  background-color: #dad4d4e0; }
 
 .beneficios-prog-ppal {
-  text-align: center;
-  text-decoration: none; }
+  text-align: center; }
 
 .lista-beneficios {
   list-style-type: none;
@@ -103,6 +127,7 @@ h3 {
       position: absolute;
       top: 24px; }
 
+/*  MQ */
 @media screen and (max-width: 1440px) {
   .introduccion {
     margin-left: 2px;
@@ -112,22 +137,28 @@ h3 {
       line-height: 2; } }
 
 @media screen and (max-width: 1020px) {
-  .introduccion {
-    margin-left: 2px;
-    margin-right: 2px; }
-    .introduccion p {
-      text-align: center;
-      line-height: 2; }
   .flex-prog-ppal {
     flex-direction: column; }
     .flex-prog-ppal div {
-      padding-bottom: 20px; } }
+      padding-bottom: 20px; }
+  .flex-ppal-servicios {
+    flex-direction: column;
+    align-items: center; }
+    .flex-ppal-servicios p {
+      width: 100vw; } }
 
 @media screen and (max-width: 760px) {
   .lista-beneficios {
     list-style-type: none;
     display: grid;
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .introduccion p {
+    font-size: 13px; }
+  .lista-beneficios li p {
+    padding-left: 20px;
+    font-size: 13px; }
+  .flex-prog-ppal div p {
+    font-size: 13px; } }
 
 @media screen and (max-width: 375px) {
   .prog-ppal h1 {
