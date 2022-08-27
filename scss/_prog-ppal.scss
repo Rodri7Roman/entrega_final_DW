@@ -7,14 +7,26 @@
 
 
 
-.bienvenida {
+.bienv-flex{
+    display: flex;
+    justify-content: center;
     text-align: center;
-    font-family: $fuente;
-    padding-top: 20px;
-    // text-decoration: underline;
-    font-size: 35px;
-    color: #041a04;
+    h2{
+        padding-left: 10px;
+    }
+}
 
+.bienvenida {
+    font-family: $fuente;
+    padding-top: 60px;   
+    font-size: 40px;
+    font-weight: bold;
+    color: #707070;
+}
+
+.bienvenida2{
+    @extend .bienvenida;
+    color: #318C92;
 }
 
 h3 {
@@ -31,12 +43,15 @@ h3 {
     margin-right: 250px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 
     p {
-        text-align: center;
-        line-height: 2;
-        font-size: 16px;
+        color: #707070;
+        text-align: start;
+        line-height: 1.5;
+        font-size: 20px;
+        
     }
 }
 
@@ -65,8 +80,7 @@ h3 {
         }
 
         p {
-            text-align: center;
-            font-size: 15px;
+            font-family: $fuente;
         }
     }
 }

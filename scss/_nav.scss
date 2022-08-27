@@ -101,12 +101,27 @@
     }
 }
 
+
+
 .nav-item:hover{
     background-color: #05412f21;
     border-radius: 8px;
 
+
     transform: scale(.9,.9);
     transition-duration: .3s;
     animation-timing-function: ease;
+    
+}
+.item-contacto{
+    background-color: #318C92;
+    border-radius: 20px;
+}
+
+.item-contacto:hover{
+    background-color: #ffffff;
+    a{
+        color: #318C92 !important;
+    }
     
 }
