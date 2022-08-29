@@ -1,5 +1,9 @@
 /*  NAVEGADOR */
 
+.bg2{
+    background-image: url(../img/aaa.png)  !important;
+}
+
 .navbar{
     background-image: url(../img/Group.png) ;
     height: 80vh;
@@ -68,11 +72,6 @@
     }
 }
 
-
-
-
-
-
 .container-fluid{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -92,8 +91,6 @@
 .nav-item{
     margin: $margin-items;
     padding: $padding-items;
-    
-    
     a{
         font-family: $fuente;
         color: #ffffff !important;

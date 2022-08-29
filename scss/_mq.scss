@@ -1,8 +1,8 @@
 /*  MQ */
 @media screen and (max-width:1440px) {
     .introduccion {
-        margin-left: 100px;
-        margin-right: 100px;
+        margin-left: 80px;
+        margin-right: 80px;
 
 
     }
@@ -12,11 +12,13 @@
 
     .flex-prog-ppal {
         flex-direction: column;
-
-        div {
-            padding-bottom: 20px;
+        p{
+            width: 50vw;
         }
+
     }
+
+
 
     .flex-ppal-servicios{
         flex-direction: column;
@@ -30,10 +32,41 @@
     .container-fluid{
         justify-content: space-between !important;
     }
+    .introduccion {
+        margin-left: 60px;
+        margin-right: 60px;
+
+
+    }
+
+
+    .logo-texto{
+        p{
+            display: none;
+        }
+    }
+    p{
+        padding-top: 12px;
+    }
 
 }
 
+@media screen and (max-width:990px) {
+    .container-fluid{
+        background-color: #161313d2;
+
+    }
+}
+
 @media screen and (max-width: 760px) {
+
+
+    .flex-prog-ppal {
+        p{
+            width: 70vw;
+        }
+
+    }
     .lista-beneficios {
         list-style-type: none;
         display: grid;
@@ -60,8 +93,20 @@
     }
 
     .introduccion {
-        margin-left: 30px;
-        margin-right: 30px;
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:520px) {
+    .flex-prog-ppal {
+        p{
+            width: 100vw;
+        }
+
     }
 }
 
@@ -79,5 +124,12 @@
     .introduccion {
         margin-left: 0;
         margin-right: 0;
+    }
+
+    .flex-prog-ppal {
+        p{
+            width: 100vw;
+        }
+
     }
 }

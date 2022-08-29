@@ -50,6 +50,9 @@ table {
     opacity: 1; } }
 
 /*  NAVEGADOR */
+.bg2 {
+  background-image: url(../img/aaa.png) !important; }
+
 .navbar {
   background-image: url(../img/Group.png);
   height: 80vh;
@@ -150,7 +153,7 @@ table {
   .bienv-flex h2 {
     padding-left: 10px; }
 
-.bienvenida, .bienvenida2, h3, .beneficios-prog-ppal {
+.bienvenida, .bienvenida2, h3 {
   font-family: "Poppins", sans-serif;
   padding-top: 60px;
   font-size: 40px;
@@ -185,133 +188,123 @@ h3 {
 /*  PROGRAMA PRINCIPAL */
 .flex-prog-ppal {
   display: flex;
-  padding-top: 40px;
-  padding-bottom: 40px; }
-  .flex-prog-ppal div {
-    margin-left: 40px;
-    margin-right: 40px;
-    animation-name: aparecer-elemento;
-    animation-duration: 1s;
-    animation-timing-function: ease; }
-    .flex-prog-ppal div img {
-      min-width: 250px;
-      padding-bottom: 20px;
-      border-radius: 40px;
-      filter: drop-shadow(4px -4px 40px #000000c5); }
-    .flex-prog-ppal div p {
-      font-family: "Poppins", sans-serif; }
-
-.flex-ppal-servicios {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  justify-content: space-around;
   align-items: center; }
-  .flex-ppal-servicios div {
-    margin-left: 40px;
-    margin-right: 40px; }
-  .flex-ppal-servicios h2 {
+  .flex-prog-ppal p {
+    align-self: center;
+    width: 25vw;
+    font-family: "Poppins", sans-serif;
+    color: #707070;
+    padding-left: 20px;
     padding-top: 10px;
-    padding-right: 40px;
-    padding-left: 40px; }
-  .flex-ppal-servicios p {
-    width: 50vw;
-    padding-top: 2px;
-    font-size: 15px;
-    padding-right: 40px;
-    padding-left: 40px; }
-
-.bg-gray {
-  background-color: #f3f3f3; }
+    padding-bottom: 40px; }
 
 /*  BENEFICIOS-INICIO */
-.beneficios {
-  background-color: #dad4d4e0; }
-
-.beneficios-prog-ppal {
-  text-align: center; }
-
-.lista-beneficios {
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr; }
-  .lista-beneficios li {
-    position: relative;
-    padding: 16px; }
-    .lista-beneficios li p {
-      padding-left: 20px; }
-    .lista-beneficios li .rombo {
-      width: 10px;
-      height: 10px;
-      background: #163504;
-      transform: rotate(45deg);
-      position: absolute;
-      top: 24px; }
-
 /*  FOOTER */
 .footer {
-  background-color: #2d5332;
+  background-color: #106048;
   padding-top: 16px;
   padding-bottom: 16px;
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly; }
-  .footer p {
+  .footer .logo-texto p {
+    padding-top: 8px;
+    width: 20vw;
     font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    font-size: 24px;
-    color: #051808;
-    margin-bottom: 5px !important; }
-  .footer a {
-    font-family: "Poppins", sans-serif; }
-  .footer a:hover {
-    text-decoration: underline; }
+    font-weight: lighter;
+    line-height: 1.5;
+    color: white; }
+  .footer .nav-footer {
+    font-family: "Poppins", sans-serif;
+    padding-top: 20px; }
+    .footer .nav-footer a {
+      color: #7DDc3f;
+      padding-bottom: 6px;
+      text-decoration: underline; }
+    .footer .nav-footer p {
+      color: white;
+      padding-bottom: 16px; }
+  .footer .redes {
+    padding-top: 20px;
+    font-family: "Poppins", sans-serif;
+    color: white; }
+
+.sub-footer {
+  background-color: #d4d4d4;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding-top: 22px;
+  padding-bottom: 22px; }
 
 .red-whatsapp {
-  color: #051808;
+  color: white;
   display: flex;
   padding-top: 12px; }
   .red-whatsapp img {
-    padding-right: 2px;
-    margin-right: 5px; }
+    padding-top: 16px; }
+  .red-whatsapp a {
+    padding-left: 12px;
+    font-family: "Poppins", sans-serif;
+    padding-top: 20px; }
 
 .red-facebook {
-  color: #0000ff;
+  color: white;
   display: flex;
   padding-top: 12px; }
   .red-facebook img {
-    padding-right: 2px;
-    margin-right: 5px; }
+    padding-top: 16px; }
+  .red-facebook a {
+    padding-left: 12px;
+    font-family: "Poppins", sans-serif;
+    padding-top: 20px; }
 
 .red-gmail {
-  color: #521c1c;
+  color: white;
   display: flex;
   padding-top: 12px; }
   .red-gmail img {
-    padding-right: 2px;
-    margin-right: 5px; }
+    padding-top: 16px; }
+  .red-gmail a {
+    padding-left: 12px;
+    font-family: "Poppins", sans-serif;
+    padding-top: 20px; }
 
 /*  MQ */
 @media screen and (max-width: 1440px) {
   .introduccion {
-    margin-left: 100px;
-    margin-right: 100px; } }
+    margin-left: 80px;
+    margin-right: 80px; } }
 
 @media screen and (max-width: 1020px) {
   .flex-prog-ppal {
     flex-direction: column; }
-    .flex-prog-ppal div {
-      padding-bottom: 20px; }
+    .flex-prog-ppal p {
+      width: 50vw; }
   .flex-ppal-servicios {
     flex-direction: column;
     align-items: center; }
     .flex-ppal-servicios p {
       width: 100vw; }
   .container-fluid {
-    justify-content: space-between !important; } }
+    justify-content: space-between !important; }
+  .introduccion {
+    margin-left: 60px;
+    margin-right: 60px; }
+  .logo-texto p {
+    display: none; }
+  p {
+    padding-top: 12px; } }
+
+@media screen and (max-width: 990px) {
+  .container-fluid {
+    background-color: #161313d2; } }
 
 @media screen and (max-width: 760px) {
+  .flex-prog-ppal p {
+    width: 70vw; }
   .lista-beneficios {
     list-style-type: none;
     display: grid;
@@ -325,8 +318,14 @@ h3 {
     .bienv-flex .bienvenida2 {
       padding-top: 0; }
   .introduccion {
-    margin-left: 30px;
-    margin-right: 30px; } }
+    margin-left: 6px;
+    margin-right: 6px; }
+  .footer {
+    flex-direction: column; } }
+
+@media screen and (max-width: 520px) {
+  .flex-prog-ppal p {
+    width: 100vw; } }
 
 @media screen and (max-width: 375px) {
   .prog-ppal h1 {
@@ -335,4 +334,6 @@ h3 {
     font-size: 20px; }
   .introduccion {
     margin-left: 0;
-    margin-right: 0; } }
+    margin-right: 0; }
+  .flex-prog-ppal p {
+    width: 100vw; } }

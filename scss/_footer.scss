@@ -1,33 +1,57 @@
 /*  FOOTER */
 .footer{
-    
-    background-color: #2d5332;
+    background-color: #106048;
     padding-top: 16px;
     padding-bottom: 16px;
+    align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    p{
+    .logo-texto{
+        p{
+            padding-top: 8px;
+            width: 20vw;
+            font-family: $fuente;
+            font-weight: lighter;
+            line-height: 1.5;
+            color: $color-fuente-nav-footer;
+        }
+    }
+    .nav-footer{
         font-family: $fuente;
-        font-weight: bold;
-        font-size: 24px;
-        color: #051808;
-        margin-bottom: 5px !important;
+        
+        padding-top: 20px;
+        a{
+            color: #7DDc3f;
+            padding-bottom: 6px;
+            text-decoration: underline;
+        }
+        p{
+            color: $color-fuente-nav-footer;
+            padding-bottom: 16px;
+        }
+    }
+    .redes{
+        padding-top: 20px;
+        font-family: $fuente;
+        color: $color-fuente-nav-footer;
+    }
 
-    }
-    a{
-        font-family: $fuente;
-    }
-    a:hover{
-        text-decoration: underline;
-    }
 }
 
+.sub-footer{
+    background-color: #d4d4d4;
+    text-align: center;
+    font-family: $fuente;
+    font-weight: 600;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
 
 $redes:(
-    whatsapp:#051808,
-    facebook: #0000ff,
-    gmail: #521c1c,
+    whatsapp:$color-fuente-nav-footer,
+    facebook: $color-fuente-nav-footer,
+    gmail: $color-fuente-nav-footer,
 );
 
 @each $red, $color in $redes{
@@ -36,8 +60,12 @@ $redes:(
         display: flex;
         padding-top: 12px;
         img{
-            padding-right: 2px;
-            margin-right: 5px;
+            padding-top: 16px;
+        }
+        a{
+            padding-left: 12px;
+            font-family: $fuente;
+            padding-top: 20px;
         }
     }
 }

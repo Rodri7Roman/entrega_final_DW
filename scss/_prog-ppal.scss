@@ -7,24 +7,25 @@
 
 
 
-.bienv-flex{
+.bienv-flex {
     display: flex;
     justify-content: center;
     text-align: center;
-    h2{
+
+    h2 {
         padding-left: 10px;
     }
 }
 
 .bienvenida {
     font-family: $fuente;
-    padding-top: 60px;   
+    padding-top: 60px;
     font-size: 40px;
     font-weight: bold;
     color: #707070;
 }
 
-.bienvenida2{
+.bienvenida2 {
     @extend .bienvenida;
     color: #318C92;
 }
@@ -51,108 +52,74 @@ h3 {
         text-align: start;
         line-height: 1.5;
         font-size: 20px;
-        
+
     }
 }
 
-.text-center{
+.text-center {
     text-align: start !important;
 }
 
 /*  PROGRAMA PRINCIPAL */
+
 .flex-prog-ppal {
     display: flex;
-    padding-top: $padding-margin-flex;
-    padding-bottom: $padding-margin-flex;
-
-    div {
-        margin-left: $padding-margin-flex;
-        margin-right: $padding-margin-flex;
-        animation-name: aparecer-elemento;
-        animation-duration: 1s;
-        animation-timing-function: ease;
-
-        img {
-            min-width: 250px;
-            padding-bottom: 20px;
-            border-radius: 40px;
-            filter: drop-shadow(4px -4px 40px #000000c5);
-        }
-
-        p {
-            font-family: $fuente;
-        }
-    }
-}
-
-.flex-ppal-servicios{
-    display: flex;
-    justify-content: space-between;
-    padding-top: $padding-margin-flex;
-    padding-bottom: $padding-margin-flex;
+    justify-content: space-around;
     align-items: center;
-    div{
-        margin-left: $padding-margin-flex;
-        margin-right: $padding-margin-flex;
-    }
-    h2{
-        padding-top: 10px;
-        padding-right:$padding-margin-flex ;
-        padding-left: $padding-margin-flex;
-    }
     p{
-        width: 50vw;
-        padding-top: 2px;
-        font-size: 15px;
-        padding-right:$padding-margin-flex ;
-        padding-left: $padding-margin-flex;
+        align-self: center;
+        width: 25vw;
+        font-family: $fuente;
+        color: #707070;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 40px;
     }
 }
-
-.bg-gray{
-    background-color: #f3f3f3;
-}
-
 
 /*  BENEFICIOS-INICIO */
 
-.beneficios {
-    background-color: #dad4d4e0;
+// .beneficios {
+//     background-color: #f5f1f1e0;
 
-}
+// }
 
-.beneficios-prog-ppal {
-    text-align: center;
-    @extend .bienvenida;
-    // text-decoration: none;
-}
+// .beneficios-prog-ppal {
+    
+    
+//     @extend .bienvenida;
+//     padding-bottom: 16px;
+//     text-align: center;
+//     // text-decoration: none;
+// }
 
-.lista-beneficios {
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+// .lista-beneficios {
+//     list-style-type: none;
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     grid-template-rows: 1fr 1fr 1fr;
 
-    li {
-        position: relative;
-        padding: 16px;
+//     li {
+//         position: relative;
+//         padding: 16px;
 
-        p {
-            padding-left: 20px;
-        }
+//         p {
+//             padding-left: 20px;
+//             font-family: $fuente;
+//             color: #707070;
+//         }
 
-        .rombo {
-            width: 10px;
-            height: 10px;
-            background: #163504;
-            transform: rotate(45deg);
-            position: absolute;
-            top: 24px;
+//         .rombo {
+//             width: 10px;
+//             height: 10px;
+//             background: #163504;
+//             transform: rotate(45deg);
+//             position: absolute;
+//             top: 18px;
 
-        }
-    }
+//         }
+//     }
 
 
 
-}
-
+// }
