@@ -53,6 +53,9 @@ table {
 .bg2 {
   background-image: url(../img/aaa.png) !important; }
 
+.bg3 {
+  background-image: url(../img/aaaa.png) !important; }
+
 .navbar {
   background-image: url(../img/Group.png);
   height: 80vh;
@@ -149,7 +152,8 @@ table {
 .bienv-flex {
   display: flex;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 40px; }
   .bienv-flex h2 {
     padding-left: 10px; }
 
@@ -174,8 +178,7 @@ h3 {
   margin-right: 250px;
   padding-left: 50px;
   padding-right: 50px;
-  padding-bottom: 20px;
-  padding-top: 20px; }
+  padding-bottom: 20px; }
   .introduccion p {
     color: #707070;
     text-align: start;
@@ -186,11 +189,11 @@ h3 {
   text-align: start !important; }
 
 /*  PROGRAMA PRINCIPAL */
-.flex-prog-ppal {
+.flex-prog-ppal, .flex-ppal-servicios, .flex-quienes-somos {
   display: flex;
   justify-content: space-around;
   align-items: center; }
-  .flex-prog-ppal p {
+  .flex-prog-ppal p, .flex-ppal-servicios p, .flex-quienes-somos p {
     align-self: center;
     width: 25vw;
     font-family: "Poppins", sans-serif;
@@ -198,6 +201,39 @@ h3 {
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 40px; }
+
+.flex-ppal-servicios, .flex-quienes-somos {
+  padding-top: 20px;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: #f3f3f37a; }
+  .flex-ppal-servicios h4, .flex-quienes-somos h4 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: #707070;
+    font-size: x-large;
+    padding-top: 12px;
+    padding-bottom: 16px; }
+  .flex-ppal-servicios p, .flex-quienes-somos p {
+    font-weight: lighter; }
+
+.flex-quienes-somos {
+  background-color: white;
+  justify-content: space-around; }
+  .flex-quienes-somos h4 {
+    font-size: 30px;
+    color: #318C92;
+    text-align: start;
+    padding-left: 20px; }
+  .flex-quienes-somos p {
+    width: 50vw;
+    text-align: start;
+    font-size: 20px; }
+  .flex-quienes-somos div {
+    padding-bottom: 20px; }
+    .flex-quienes-somos div a {
+      color: #318C92;
+      font-weight: bold; }
 
 /*  BENEFICIOS-INICIO */
 /*  FOOTER */
@@ -279,15 +315,10 @@ h3 {
     margin-right: 80px; } }
 
 @media screen and (max-width: 1020px) {
-  .flex-prog-ppal {
+  .flex-prog-ppal, .flex-ppal-servicios, .flex-quienes-somos {
     flex-direction: column; }
-    .flex-prog-ppal p {
-      width: 50vw; }
-  .flex-ppal-servicios {
-    flex-direction: column;
-    align-items: center; }
-    .flex-ppal-servicios p {
-      width: 100vw; }
+    .flex-prog-ppal p, .flex-ppal-servicios p, .flex-quienes-somos p {
+      width: 60vw; }
   .container-fluid {
     justify-content: space-between !important; }
   .introduccion {
@@ -296,14 +327,21 @@ h3 {
   .logo-texto p {
     display: none; }
   p {
-    padding-top: 12px; } }
+    padding-top: 12px; }
+  .flex-quienes-somos h4 {
+    text-align: center; }
+  .flex-quienes-somos p {
+    text-align: center;
+    width: 70vw; } }
 
 @media screen and (max-width: 990px) {
   .container-fluid {
-    background-color: #161313d2; } }
+    background-color: #161313d2; }
+  .flex-quienes-somos p {
+    width: 80vw; } }
 
 @media screen and (max-width: 760px) {
-  .flex-prog-ppal p {
+  .flex-prog-ppal p, .flex-ppal-servicios p, .flex-quienes-somos p {
     width: 70vw; }
   .lista-beneficios {
     list-style-type: none;
@@ -321,10 +359,12 @@ h3 {
     margin-left: 6px;
     margin-right: 6px; }
   .footer {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .flex-quienes-somos p {
+    width: 100vw; } }
 
 @media screen and (max-width: 520px) {
-  .flex-prog-ppal p {
+  .flex-prog-ppal p, .flex-ppal-servicios p, .flex-quienes-somos p {
     width: 100vw; } }
 
 @media screen and (max-width: 375px) {
@@ -335,5 +375,5 @@ h3 {
   .introduccion {
     margin-left: 0;
     margin-right: 0; }
-  .flex-prog-ppal p {
+  .flex-prog-ppal p, .flex-ppal-servicios p, .flex-quienes-somos p {
     width: 100vw; } }

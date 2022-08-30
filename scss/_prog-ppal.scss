@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
-
+    padding-bottom: 40px;
     h2 {
         padding-left: 10px;
     }
@@ -45,7 +45,6 @@ h3 {
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 20px;
-    padding-top: 20px;
 
     p {
         color: #707070;
@@ -76,6 +75,52 @@ h3 {
         padding-bottom: 40px;
     }
 }
+
+.flex-ppal-servicios{
+    @extend .flex-prog-ppal;
+    padding-top: 20px;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #f3f3f37a;
+    h4{
+        text-align: center;
+        font-family: $fuente;
+        color: #707070;
+        font-size: x-large;
+        padding-top: 12px;
+        padding-bottom: 16px;
+        
+    }
+    p{
+        font-weight: lighter;
+
+    }
+}
+
+.flex-quienes-somos{
+    background-color: white;
+    @extend .flex-ppal-servicios;
+    justify-content: space-around;
+    h4{
+        font-size: 30px;
+        color: #318C92;
+        text-align: start;
+        padding-left: 20px;
+    }
+    p{
+        width: 50vw;
+        text-align: start;
+        font-size: 20px;
+    }
+    div{
+        padding-bottom: 20px;
+        a{
+            color: #318C92;
+            font-weight: bold;
+        }
+    }
+}
+
 
 /*  BENEFICIOS-INICIO */
 
