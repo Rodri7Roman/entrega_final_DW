@@ -12,15 +12,17 @@
 
     .flex-prog-ppal {
         flex-direction: column;
-        p{
+
+        p {
             width: 60vw;
         }
 
     }
 
-    .container-fluid{
+    .container-fluid {
         justify-content: space-between !important;
     }
+
     .introduccion {
         margin-left: 60px;
         margin-right: 60px;
@@ -29,20 +31,22 @@
     }
 
 
-    .logo-texto{
-        p{
+    .logo-texto {
+        p {
             display: none;
         }
     }
-    p{
+
+    p {
         padding-top: 12px;
     }
 
-    .flex-quienes-somos{
-        h4{
+    .flex-quienes-somos {
+        h4 {
             text-align: center;
         }
-        p{
+
+        p {
             text-align: center;
             width: 70vw;
         }
@@ -52,29 +56,29 @@
 }
 
 @media screen and (max-width:990px) {
-    .container-fluid{
-        background-color: #161313d2;
+    .container-fluid {
+        background-color: #01130bd2;
 
     }
-    
-    .flex-quienes-somos{
 
-        p{
+    .flex-quienes-somos {
+
+        p {
             width: 80vw;
         }
 
     }
+
 }
 
 @media screen and (max-width: 760px) {
-
-
     .flex-prog-ppal {
-        p{
+        p {
             width: 70vw;
         }
 
     }
+
     .lista-beneficios {
         list-style-type: none;
         display: grid;
@@ -92,10 +96,11 @@
         }
     }
 
-    .bienv-flex{
+    .bienv-flex {
         flex-direction: column;
         align-items: center;
-        .bienvenida2{
+
+        .bienvenida2 {
             padding-top: 0;
         }
     }
@@ -105,19 +110,21 @@
         margin-right: 6px;
     }
 
-    .footer{
+    .footer {
         flex-direction: column;
     }
-    .flex-quienes-somos{
-        p{
+
+    .flex-quienes-somos {
+        p {
             width: 100vw;
         }
 
     }
 }
+
 @media screen and (max-width:520px) {
     .flex-prog-ppal {
-        p{
+        p {
             width: 100vw;
         }
 
@@ -135,13 +142,14 @@
             font-size: 20px;
         }
     }
+
     .introduccion {
         margin-left: 0;
         margin-right: 0;
     }
 
     .flex-prog-ppal {
-        p{
+        p {
             width: 100vw;
         }
 

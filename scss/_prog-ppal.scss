@@ -1,12 +1,4 @@
 /*  Prog Ppal */
-
-.prog-ppal {
-    background-color: #f7f9fb;
-
-}
-
-
-
 .bienv-flex {
     display: flex;
     justify-content: center;
@@ -81,7 +73,6 @@ h3 {
     padding-top: 20px;
     justify-content: space-evenly;
     text-align: center;
-    background-color: #f3f3f37a;
     h4{
         text-align: center;
         font-family: $fuente;
@@ -98,7 +89,6 @@ h3 {
 }
 
 .flex-quienes-somos{
-    background-color: white;
     @extend .flex-ppal-servicios;
     justify-content: space-around;
     h4{
@@ -112,59 +102,86 @@ h3 {
         text-align: start;
         font-size: 20px;
     }
-    div{
+    .solicitar-servicios{
         padding-bottom: 20px;
+        position: relative;
         a{
             color: #318C92;
             font-weight: bold;
+
+        }
+        img{
+            width: 300px;
+            height: 220px;
+            border-radius: 20px;
+        }
+
+        p{
+            color: #ffffff;
+            position: absolute;
+            bottom: 4px;
+            left: 52px;
+            width: 20vw;
+        }
+    }
+}
+
+.formulario{
+    background-color: #f2f3f5;
+    padding: 40px;
+    margin-bottom: 48px;
+    border-radius: 24px;
+    font-family: $fuente;
+    h4{
+        padding-bottom: 24px;
+    }
+    
+    div{
+        padding: 8px;
+        label{
+            padding: 10px;
+        }
+    }
+    .inputs{
+        width: 100%;
+        padding: 12px;
+        border-radius: 8px;
+        border: 1px solid #318C92 ;
+        resize: none;
+    }
+    .enviar{
+        width: 50%;
+        padding: 12px;
+        border: 2px solid #051c1f;
+        border-radius: 6px;
+        color: white;
+        background-color: #318C92;
+    }
+
+    .env-limp{
+        input{
+            margin-bottom: 12px;
+        }
+    }
+}
+
+.bg-contacto{
+    background-color: #f2f3f5;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 12px;
+    padding-left: 12px;
+    border-radius: 28px;
+    .contacto-ppal{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        img{
+            padding: 20px;
         }
     }
 }
 
 
-/*  BENEFICIOS-INICIO */
 
-// .beneficios {
-//     background-color: #f5f1f1e0;
-
-// }
-
-// .beneficios-prog-ppal {
-    
-    
-//     @extend .bienvenida;
-//     padding-bottom: 16px;
-//     text-align: center;
-//     // text-decoration: none;
-// }
-
-// .lista-beneficios {
-//     list-style-type: none;
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-//     grid-template-rows: 1fr 1fr 1fr;
-
-//     li {
-//         position: relative;
-//         padding: 16px;
-
-//         p {
-//             padding-left: 20px;
-//             font-family: $fuente;
-//             color: #707070;
-//         }
-
-//         .rombo {
-//             width: 10px;
-//             height: 10px;
-//             background: #163504;
-//             transform: rotate(45deg);
-//             position: absolute;
-//             top: 18px;
-
-//         }
-//     }
-
-
-
-// }

@@ -7,10 +7,13 @@
 .bg3{
     background-image: url(../img/aaaa.png) !important;
 }
+.bg4{
+    background-image: url(../img/trab.png) !important;
+}
 
 .navbar{
     background-image: url(../img/Group.png) ;
-    height: 80vh;
+    height: 60vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -21,7 +24,7 @@
     .primer-texto{
         font-family: 'Montserrat', sans-serif;
         position: absolute;
-        top: 25%;
+        top: 28%;
         left: 6%;
         color: #ffffff;
         font-size: 38px;
@@ -29,7 +32,7 @@
     }
     .segundo-texto{
         position: absolute;
-        top: 38%;
+        top: 40%;
         left: 6%;
         color: #ffffff;        
         font-family: 'Montserrat', sans-serif;
@@ -39,7 +42,7 @@
     .redes-nav{
         position: absolute;
         font-family: 'Montserrat', sans-serif;
-        top: 90%;
+        top: 88%;
         left: 55%;
         display: flex;
         color: #ffffff;
@@ -63,7 +66,7 @@
     @media screen and (max-width:780px) {
         .redes-nav{
             flex-direction: column;
-            top: 85%;
+            top: 80%;
             font-size: 14px;
         }
 

@@ -56,9 +56,12 @@ table {
 .bg3 {
   background-image: url(../img/aaaa.png) !important; }
 
+.bg4 {
+  background-image: url(../img/trab.png) !important; }
+
 .navbar {
   background-image: url(../img/Group.png);
-  height: 80vh;
+  height: 60vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -68,14 +71,14 @@ table {
   .navbar .primer-texto {
     font-family: 'Montserrat', sans-serif;
     position: absolute;
-    top: 25%;
+    top: 28%;
     left: 6%;
     color: #ffffff;
     font-size: 38px;
     font-weight: bold; }
   .navbar .segundo-texto {
     position: absolute;
-    top: 38%;
+    top: 40%;
     left: 6%;
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
@@ -84,7 +87,7 @@ table {
   .navbar .redes-nav {
     position: absolute;
     font-family: 'Montserrat', sans-serif;
-    top: 90%;
+    top: 88%;
     left: 55%;
     display: flex;
     color: #ffffff;
@@ -102,7 +105,7 @@ table {
   @media screen and (max-width: 780px) {
     .navbar .redes-nav {
       flex-direction: column;
-      top: 85%;
+      top: 80%;
       font-size: 14px; }
     .navbar .primer-texto {
       font-size: 30px; }
@@ -146,9 +149,6 @@ table {
     color: #318C92 !important; }
 
 /*  Prog Ppal */
-.prog-ppal {
-  background-color: #f7f9fb; }
-
 .bienv-flex {
   display: flex;
   justify-content: center;
@@ -205,8 +205,7 @@ h3 {
 .flex-ppal-servicios, .flex-quienes-somos {
   padding-top: 20px;
   justify-content: space-evenly;
-  text-align: center;
-  background-color: #f3f3f37a; }
+  text-align: center; }
   .flex-ppal-servicios h4, .flex-quienes-somos h4 {
     text-align: center;
     font-family: "Poppins", sans-serif;
@@ -218,7 +217,6 @@ h3 {
     font-weight: lighter; }
 
 .flex-quienes-somos {
-  background-color: white;
   justify-content: space-around; }
   .flex-quienes-somos h4 {
     font-size: 30px;
@@ -229,17 +227,70 @@ h3 {
     width: 50vw;
     text-align: start;
     font-size: 20px; }
-  .flex-quienes-somos div {
-    padding-bottom: 20px; }
-    .flex-quienes-somos div a {
+  .flex-quienes-somos .solicitar-servicios {
+    padding-bottom: 20px;
+    position: relative; }
+    .flex-quienes-somos .solicitar-servicios a {
       color: #318C92;
       font-weight: bold; }
+    .flex-quienes-somos .solicitar-servicios img {
+      width: 300px;
+      height: 220px;
+      border-radius: 20px; }
+    .flex-quienes-somos .solicitar-servicios p {
+      color: #ffffff;
+      position: absolute;
+      bottom: 4px;
+      left: 52px;
+      width: 20vw; }
 
-/*  BENEFICIOS-INICIO */
+.formulario {
+  background-color: #f2f3f5;
+  padding: 40px;
+  margin-bottom: 48px;
+  border-radius: 24px;
+  font-family: "Poppins", sans-serif; }
+  .formulario h4 {
+    padding-bottom: 24px; }
+  .formulario div {
+    padding: 8px; }
+    .formulario div label {
+      padding: 10px; }
+  .formulario .inputs {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #318C92;
+    resize: none; }
+  .formulario .enviar {
+    width: 50%;
+    padding: 12px;
+    border: 2px solid #051c1f;
+    border-radius: 6px;
+    color: white;
+    background-color: #318C92; }
+  .formulario .env-limp input {
+    margin-bottom: 12px; }
+
+.bg-contacto {
+  background-color: #f2f3f5;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 12px;
+  padding-left: 12px;
+  border-radius: 28px; }
+  .bg-contacto .contacto-ppal {
+    display: flex;
+    justify-content: center;
+    align-content: center; }
+    .bg-contacto .contacto-ppal img {
+      padding: 20px; }
+
 /*  FOOTER */
 .footer {
   background-color: #106048;
   padding-top: 16px;
+  margin-top: 40px;
   padding-bottom: 16px;
   align-items: center;
   display: flex;
@@ -336,7 +387,7 @@ h3 {
 
 @media screen and (max-width: 990px) {
   .container-fluid {
-    background-color: #161313d2; }
+    background-color: #01130bd2; }
   .flex-quienes-somos p {
     width: 80vw; } }
 
